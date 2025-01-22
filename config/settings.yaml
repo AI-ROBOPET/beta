@@ -1,0 +1,35 @@
+# settings.yaml
+# Configuration file for AI ROBOPET
+
+application:
+  name: AI ROBOPET
+  version: 1.0.0
+
+blockchain:
+  provider_url: https://mainnet.infura.io/v3/your-infura-project-id
+  contract_address: 0x1234567890abcdef1234567890abcdef12345678
+  abi_path: src/nfts/abi.json
+  private_key: 0xabcdefabcdefabcdefabcdefabcdefabcdef
+
+sdk:
+  base_url: https://api.gamesdk.com/v1
+  api_key: your-game-sdk-api-key
+
+logging:
+  level: INFO
+  file: logs/application.log
+
+nft:
+  max_supply: 1000000
+  metadata_base_url: https://ipfs.io/ipfs/
+
+# Default settings for agents
+agents:
+  default_abilities:
+    - "basic_attack"
+    - "shield"
+  initial_level: 1
+  experience_per_level: 100
+
+frontend:
+  public_url: https://www.ai-robopet.com
